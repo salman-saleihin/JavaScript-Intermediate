@@ -15,5 +15,5 @@ const normalPerson = {
 
 normalPerson.chargeBill(150);
 normalPerson.chargeBill(850);
-normalPerson.chargeBill(4000);
+normalPerson.chargeBill(400);
 console.log(normalPerson.salary);
