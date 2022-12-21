@@ -1,4 +1,4 @@
-// Jokhon onek gula object lagbe similar Style e or same pattern e tokhon ::
+// Jokhon onek gula object lagbe similar Style e or same pattern e tokhon class ::
 
 class person {
     constructor(firstName , lastName , salary){
