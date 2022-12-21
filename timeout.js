@@ -23,7 +23,7 @@ setTimeout(() => {
 // SET INTERVAL ::
 
 setInterval ( () => {
-    console.log("I am BACK and Will Back again after 8 Seconds");
-} , 8000)
+    console.log("I am BACK and Will Back again after 9 Seconds");
+} , 9000)
 
 // Press ctrl + c to stop on terminal node
