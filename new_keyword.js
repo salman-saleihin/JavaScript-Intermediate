@@ -13,3 +13,6 @@ console.log(heroPerson);
 
 const friendlyPerson = new person('Sharzil' , 'Kabir' , 20000);
 console.log(friendlyPerson);
+
+
+

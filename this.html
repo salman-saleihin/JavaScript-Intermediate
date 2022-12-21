@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This-KeyWord</title>
+</head>
+<body>
+
+
+    <!-- How to Understand This-KeyWord !!!! -->
+
+    <h1>This - Is not Confused Anymore!</h1>
+
+    <p onclick="this.innerText = 'I am Clicked' ">I am Paragraph. Click me And Check Console!</p>
+
+
+
+    <script>
+        const myObj = {
+            name : 'Sadman Sameer' ,
+            getFullName : function(){
+                console.log(this);
+                return "Mr." + this.name ;
+            }
+        }
+        // myObj.getFullName();
+
+        const anotherObj = {
+            name : 'Hasnaat Sameer' ,
+        }
+        anotherObj.getFullName = myObj.getFullName ;
+        console.log(anotherObj.getFullName);
+        myObj.getFullName();
+        anotherObj.getFullName();
+
+        function add (a , b){
+            console.log(this); /* Will show Window in Console cause before add in left there's nothing */
+            return a + b ;
+        }
+
+        add(12 , 13); /* there is no dot and anything before add in the leftside */
+
+        anotherObj.sum = add ;
+        anotherObj.sum();
+
+    </script>
+
+</body>
+</html>
